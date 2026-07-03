@@ -1,10 +1,13 @@
 apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
-  - deployment.yaml
+- deployment.yaml
 namespace: flux-prod
 
 images:
 - name: index.docker.io/TU_USUARIO_DOCKERHUB/go-gitops-api
   newName: index.docker.io/TU_USUARIO_DOCKERHUB/go-gitops-api
-  newTag: placeholder # Tekton modificará esta línea
+  newTag: placeholder
+- name: index.docker.io/sshjavi/go-gitops-api
+  newName: index.docker.io/sshjavi/go-gitops-api
+  newTag: 0ca0bb0106e757356679e8bfef0e7d8b50fec318
