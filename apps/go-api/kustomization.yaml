@@ -5,8 +5,8 @@ resources:
 namespace: flux-prod
 
 images:
-- name: index.docker.io/TU_USUARIO_DOCKERHUB/go-gitops-api
-  newName: index.docker.io/TU_USUARIO_DOCKERHUB/go-gitops-api
+- name: index.docker.io/sshjavi/go-gitops-api
+  newName: index.docker.io/sshjavi/go-gitops-api
   newTag: placeholder
 - name: index.docker.io/sshjavi/go-gitops-api
   newName: index.docker.io/sshjavi/go-gitops-api
